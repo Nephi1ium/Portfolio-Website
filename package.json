@@ -1,0 +1,26 @@
+{
+  "name": "andrewmaurermedia",
+  "version": "1.0.0",
+  "description": "A portfolio website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "npm run scss",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nephi1ium/Portfolio-Website.git"
+  },
+  "author": "Andrew Maurer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nephi1ium/Portfolio-Website/issues"
+  },
+  "homepage": "https://github.com/Nephi1ium/Portfolio-Website#readme",
+  "dependencies": {
+    "node-js": "^1.0.0",
+    "node-sass": "^7.0.1",
+    "scss": "^0.2.4"
+  }
+}
