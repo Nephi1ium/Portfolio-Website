@@ -17,3 +17,7 @@ body {
   position: absolute;
   margin: 20px;
   width: auto; }
+
+.proj-list {
+  color: #159ae7;
+  background-color: black; }
