@@ -4,18 +4,31 @@ $tertiary-color: #031424 ;
 $quaternary-color: #CF6766;
 $quinquennial-color: #5680E9;
 
+
 body{
     background-color: $secondary-color;
-    color: $tertiary-color;
+    color: white;
+    font-family: "copperhead";
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
 }
 
+.entire-page{
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "full-background full-background full-background"
+    "main-content main-content ." ;
+}
 .full-background {
 background-image: url(../images/tv_in_wasteland.jpg) ;
 object-fit: contain;
+grid-area: full-background;
 }
 
 
-.background-image {
+.background-image-index {
 margin: 50px;
 padding: 25px;
 border-radius: 40px;
@@ -30,6 +43,26 @@ border-radius: 40px;
 
 }
 
+.background-image {
+    margin: 50px;
+    padding: 25px;
+    border-radius: 40px;
+        // background-image: url(../css/images/head_mold.jpg);
+        min-height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        border-bottom: $quaternary-color 5px solid;
+        object-fit: contain;
+    
+    }
+
+h1 {
+    .named {
+        color: $quaternary-color;
+    }
+}
 .inner-nav {
     overflow: hidden;
 
@@ -50,6 +83,12 @@ border-radius: 40px;
 }
 .fa {
     margin: 2px;
+    pad: 5px;
+}
+
+.main{
+    margin: 5px;
+    grid-area: main-content;
 }
 footer {
     border-top: $quinquennial-color 10px solid;
@@ -63,7 +102,7 @@ footer {
     background-color: $quaternary-color;
     background-size: 20px 20px;
     position:absolute;
-    bottom:0;
+margin-top: 10px;
     width:100%;
 }
 
@@ -80,12 +119,13 @@ footer {
     position:absolute;
     height:auto;
     display: grid;
+    bottom: 0;
     width: 100%;
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: auto;
     grid-template-areas: 
-    "linksHead contactHead socialHead"
-    "links contact social" ;
+    ". contactHead ."
+    ". contact ." ;
 }
     .linksHeader {
         grid-area: linksHead;
