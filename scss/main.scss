@@ -108,30 +108,34 @@ footer {
     background-color: $quaternary-color;
     background-size: 20px 20px;
     position:absolute;
-margin-top: 10px;
     width:100%;
+    margin: 10px;
+    padding: 10px;
+    margin-left: 0;
+    .site-footer {
+        // background:
+        // linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+        // linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+        // linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+        // linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+        // linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+        // linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+        background-color: $primary-color;
+        background-size: 20px 20px;
+        position:absolute;
+        height:auto;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 25% 50% 25%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        ". contactHead ."
+        ". contact ." ;
+        }
 }
 
-.site-footer {
-    // background:
-    // linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
-    // linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
-    // linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
-    // linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
-    // linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
-    // linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-    background-color: $primary-color;
-    background-size: 20px 20px;
-    position:absolute;
-    height:auto;
-    display: grid;
-    bottom: 0;
-    width: 100%;
-    grid-template-columns: 25% 50% 25%;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    ". contactHead ."
-    ". contact ." ;
+footer {
+
 }
     .linksHeader {
         grid-area: linksHead;

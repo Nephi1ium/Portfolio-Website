@@ -72,20 +72,20 @@ footer {
   background-color: #CF6766;
   background-size: 20px 20px;
   position: absolute;
-  margin-top: 10px;
-  width: 100%; }
-
-.site-footer {
-  background-color: #222629;
-  background-size: 20px 20px;
-  position: absolute;
-  height: auto;
-  display: grid;
-  bottom: 0;
   width: 100%;
-  grid-template-columns: 25% 50% 25%;
-  grid-template-rows: auto;
-  grid-template-areas: ". contactHead ." ". contact ."; }
+  margin: 10px;
+  padding: 10px;
+  margin-left: 0; }
+  footer .site-footer {
+    background-color: #222629;
+    background-size: 20px 20px;
+    position: absolute;
+    height: auto;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: ". contactHead ." ". contact ."; }
 
 .linksHeader {
   grid-area: linksHead;
