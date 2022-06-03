@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/Nephi1ium/Portfolio-Website#readme",
   "dependencies": {
+    "css.gg": "^2.0.0",
+    "fontawesome": "^5.6.3",
     "node-js": "^1.0.0",
     "node-sass": "^7.0.1",
     "scss": "^0.2.4"

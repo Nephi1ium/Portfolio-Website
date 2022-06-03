@@ -1,17 +1,29 @@
 body {
-  color: #333; }
+  background-color: #30415D;
+  color: #031424; }
+
+.full-background {
+  background-image: url(../images/tv_in_wasteland.jpg);
+  object-fit: contain; }
 
 .background-image {
+  margin: 50px;
+  padding: 25px;
+  border-radius: 40px;
   background-image: url(../css/images/head_mold.jpg);
   min-height: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  border-bottom: #CF6766 5px solid;
+  object-fit: contain; }
 
 .inner-nav {
-  overflow: hidden;
-  background-color: #333; }
+  overflow: hidden; }
+
+.nav-link {
+  color: #CF6766; }
 
 .nav-container {
   position: absolute;
@@ -19,5 +31,61 @@ body {
   width: auto; }
 
 .proj-list {
-  color: #159ae7;
-  background-color: black; }
+  color: #30415D; }
+
+.fa {
+  margin: 2px; }
+
+footer {
+  border-top: #5680E9 10px solid;
+  background-color: #CF6766;
+  background-size: 20px 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+.site-footer {
+  background-color: #222629;
+  background-size: 20px 20px;
+  position: absolute;
+  height: auto;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: auto;
+  grid-template-areas: "linksHead contactHead socialHead" "links contact social"; }
+
+.linksHeader {
+  grid-area: linksHead;
+  color: #031424;
+  text-align: left;
+  margin-left: 20px;
+  padding-left: 25px; }
+
+.socialHeader {
+  grid-area: socialHead;
+  color: #031424;
+  text-align: right;
+  margin-right: 20px;
+  padding-right: 25px; }
+
+.links {
+  grid-area: links;
+  text-align: left;
+  margin-left: 20px;
+  padding-left: 25px; }
+
+.social {
+  grid-area: social;
+  text-align: right;
+  margin-right: 20px;
+  padding-right: 25px; }
+
+.contact {
+  grid-area: contact;
+  text-align: center; }
+
+.contactHeader {
+  grid-area: contactHead;
+  text-align: center;
+  color: #031424; }
