@@ -21,11 +21,16 @@ body{
     "full-background full-background full-background"
     "main-content main-content ." ;
 }
-.full-background {
-background-image: url(../images/tv_in_wasteland.jpg) ;
-object-fit: contain;
+.full-background-index {
+
 grid-area: full-background;
 }
+
+.full-background-project {
+    background-image: url(../images/tv_in_wasteland.jpg) ;
+    object-fit: contain;
+    grid-area: full-background;
+    }
 
 
 .background-image-index {
@@ -40,10 +45,11 @@ border-radius: 40px;
     position: relative;
     border-bottom: $quaternary-color 5px solid;
     object-fit: contain;
+    
 
 }
 
-.background-image {
+.background-image-project {
     margin: 50px;
     padding: 25px;
     border-radius: 40px;
@@ -53,8 +59,8 @@ border-radius: 40px;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        border-bottom: $quaternary-color 5px solid;
         object-fit: contain;
+        object-position: center;
     
     }
 

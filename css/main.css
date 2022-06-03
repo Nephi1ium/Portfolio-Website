@@ -9,7 +9,10 @@ body {
   grid-template-rows: auto;
   grid-template-areas: "full-background full-background full-background" "main-content main-content ."; }
 
-.full-background {
+.full-background-index {
+  grid-area: full-background; }
+
+.full-background-project {
   background-image: url(../images/tv_in_wasteland.jpg);
   object-fit: contain;
   grid-area: full-background; }
@@ -27,7 +30,7 @@ body {
   border-bottom: #CF6766 5px solid;
   object-fit: contain; }
 
-.background-image {
+.background-image-project {
   margin: 50px;
   padding: 25px;
   border-radius: 40px;
@@ -36,8 +39,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  border-bottom: #CF6766 5px solid;
-  object-fit: contain; }
+  object-fit: contain;
+  object-position: center; }
 
 h1 .named {
   color: #CF6766; }
