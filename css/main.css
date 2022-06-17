@@ -7,7 +7,8 @@ body {
 .entire-page {
   grid-template-columns: 25% 50% 25%;
   grid-template-rows: auto;
-  grid-template-areas: "full-background full-background full-background" "main-content main-content ."; }
+  grid-template-areas: "full-background full-background full-background"
+ "main-content main-content ."; }
 
 .full-background-index {
   grid-area: full-background; }
@@ -16,6 +17,10 @@ body {
   background-image: url(../images/tv_in_wasteland.jpg);
   object-fit: contain;
   grid-area: full-background; }
+
+.mainBodyCont {
+  margin: 10px;
+  padding: 5px; }
 
 .background-image-index {
   margin: 50px;
@@ -63,6 +68,14 @@ h1 .named {
   margin: 2px;
   pad: 5px; }
 
+.accordion {
+  background-color: #031424; }
+
+.accordion-item {
+  background-color: #031424; }
+  .accordion-item .accordion-header {
+    background-color: #031424; }
+
 .main {
   margin: 5px;
   grid-area: main-content; }
@@ -73,8 +86,8 @@ footer {
   background-size: 20px 20px;
   position: absolute;
   width: 100%;
-  margin: 10px;
-  padding: 10px;
+  margin-top: 10px;
+  padding-top: 10px;
   margin-left: 0; }
   footer .site-footer {
     background-color: #222629;
@@ -85,7 +98,8 @@ footer {
     width: 100%;
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: auto;
-    grid-template-areas: ". contactHead ." ". contact ."; }
+    grid-template-areas: ". contactHead ."
+ ". contact ."; }
 
 .linksHeader {
   grid-area: linksHead;
@@ -121,3 +135,8 @@ footer {
   grid-area: contactHead;
   text-align: center;
   color: #031424; }
+
+  .passImages {
+    width: 225px;
+    height: auto;
+  }

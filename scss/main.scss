@@ -32,6 +32,10 @@ grid-area: full-background;
     grid-area: full-background;
     }
 
+.mainBodyCont{
+margin: 10px;
+padding: 5px;
+    }
 
 .background-image-index {
 margin: 50px;
@@ -92,6 +96,19 @@ h1 {
     pad: 5px;
 }
 
+.accordion{
+    background-color: #031424;
+
+}
+
+.accordion-item{
+    background-color: #031424;
+    .accordion-header{
+        background-color: #031424;
+    
+    }
+
+}
 .main{
     margin: 5px;
     grid-area: main-content;
@@ -134,9 +151,6 @@ footer {
         }
 }
 
-footer {
-
-}
     .linksHeader {
         grid-area: linksHead;
         // background-color: purple;

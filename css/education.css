@@ -1,0 +1,49 @@
+
+
+.topPage {
+    grid-area: topPage;
+
+}
+
+.header {
+    grid-area: header;
+
+}
+
+
+.information {
+    grid-area: information;
+
+}
+
+.footer {
+    grid-area: footer;
+
+}
+
+
+
+
+
+.mainPageContent {
+    display: grid;
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    padding: 0;
+    border: none;
+    /* box-shadow: 0 0 10px rgb(0 0 0 / 15%); */
+    font-size: 16px;
+    /* line-height: 24px; */
+    font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    grid-gap: .5rem;
+    padding: 2px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+"topPage topPage topPage topPage"
+"header header header header"
+"information information information information"
+"footer footer footer footer"
+    ;
+}
