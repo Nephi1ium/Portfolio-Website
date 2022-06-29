@@ -7,8 +7,7 @@ body {
 .entire-page {
   grid-template-columns: 25% 50% 25%;
   grid-template-rows: auto;
-  grid-template-areas: "full-background full-background full-background"
- "main-content main-content ."; }
+  grid-template-areas: "full-background full-background full-background" "main-content main-content ."; }
 
 .full-background-index {
   grid-area: full-background; }
@@ -86,8 +85,8 @@ footer {
   background-size: 20px 20px;
   position: absolute;
   width: 100%;
-  margin-top: 10px;
-  padding-top: 10px;
+  margin: 10px;
+  padding: 10px;
   margin-left: 0; }
   footer .site-footer {
     background-color: #222629;
@@ -96,10 +95,9 @@ footer {
     height: auto;
     display: grid;
     width: 100%;
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: ". contactHead ."
- ". contact ."; }
+    grid-template-areas: ". contactHead ." ". contact ."; }
 
 .linksHeader {
   grid-area: linksHead;
@@ -135,8 +133,3 @@ footer {
   grid-area: contactHead;
   text-align: center;
   color: #031424; }
-
-  .passImages {
-    width: 225px;
-    height: auto;
-  }
