@@ -133,3 +133,6 @@ footer {
   grid-area: contactHead;
   text-align: center;
   color: #031424; }
+
+.passImages {
+  max-width: 300px; }
